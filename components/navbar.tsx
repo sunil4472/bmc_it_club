@@ -43,7 +43,9 @@ export default function Navbar() {
               
               <span className="text-primary-foreground font-bold text-sm">BMC</span>
             </div> */}
+            <Link href={"/"}>
             <span className="font-bold text-xl">BMC IT Club</span>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

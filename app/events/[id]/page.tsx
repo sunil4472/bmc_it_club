@@ -193,7 +193,7 @@ export default function EventDetailPage() {
                 </Badge>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{event.title}</h1>
-              <p className="text-xl text-muted-foreground mb-8">{event.description}</p>
+              <p className="text-xl text-muted-foreground mb-8 whitespace-pre-line">{event.description}</p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center text-muted-foreground">
@@ -393,7 +393,7 @@ export default function EventDetailPage() {
                   <CardTitle>Event Details</CardTitle>
                 </CardHeader>
                 <CardContent className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground leading-relaxed">{event.description}</p>
+                  <p className="text-muted-foreground leading-relaxed whitespace-pre-line">{event.description}</p>
                 </CardContent>
               </Card>
             </div>

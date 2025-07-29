@@ -1,7 +1,7 @@
 # 🎓 BMC IT Club Website
 
 **Live Link:** [bmcit.suniln.com.np](https://bmcit.suniln.com.np)  
-**Repository:** [GitHub Repo Link](https://github.com/sunil4472/bmc-it-club)
+**Repository:** [GitHub Repo Link](https://github.com/sunil4472/bmc_it_club.git)
 
 A modern, elegant, and animated **MERN Stack website** for **Bhairahawa Multiple Campus IT Club**.  
 This platform showcases club activities, upcoming programs, blogs, and members while providing an **Admin Dashboard** for full management.
@@ -16,9 +16,9 @@ This platform showcases club activities, upcoming programs, blogs, and members w
 - **Theme Switching** → Light/Dark mode with localStorage memory.
 - **Home Page** →
   - Hero section with animations.
-  - Highlight of recent programs.
   - Animated counters (events, participants, members).
-  - Featured blogs.
+  - Highlight of recent programs.
+  - Features.
   - Testimonials carousel.
 - **About Page** →
   - Mission & Vision.
@@ -38,7 +38,7 @@ This platform showcases club activities, upcoming programs, blogs, and members w
   - Shows President, Vice President, Secretary, Program Leads, and other members with photos & social links.
 - **Contact Page** →
   - Send queries directly via form.
-  - WhatsApp integration (`wa.me`) for instant messaging.
+  - WhatsApp integration for instant messaging.
 
 ---
 
@@ -69,8 +69,6 @@ This platform showcases club activities, upcoming programs, blogs, and members w
   - See registered participants per event with all details & payment proof.
   - Track participant count vs. event limit.
 - **Admin Settings**
-  - Update Club Logo.
-  - Update Contact Number & WhatsApp link.
   - Change default theme (light/dark).
 - **Logout Option**
   - Secure logout clears JWT token and redirects to login page.
@@ -79,7 +77,7 @@ This platform showcases club activities, upcoming programs, blogs, and members w
 
 ## ⚙️ Tech Stack
 
-- **Frontend:** React, Tailwind CSS, Framer Motion
+- **Frontend:** Nextjs, Tailwind CSS, Framer Motion
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB Atlas (Mongoose)
 - **Authentication:** JWT + `ADMIN_KEY`
@@ -104,20 +102,42 @@ NEXTAUTH_URL=https://bmcit.suniln.com.np
 NEXT_PUBLIC_BASE_URL=https://bmcit.suniln.com.np
 ```
 
-🚀 Getting Started
+## 🚀 Getting Started
+
 Follow these steps to run locally and deploy:
 
-1. Clone Repo
-   git clone https://github.com/sunil4472/bmc-it-club.git
-   cd bmc-it-club
-2. Install Dependencies
-   npm install
-   or
-   npm install --force
-3. Setup Environment Variables
-   Create a .env file with the credentials provided above.
-4. Run Locally
-   npm run dev
-   Open → http://localhost:3000
+## 1. Clone Repo
 
-5. Deployment on Vercel
+```env
+git clone https://github.com/sunil4472/bmc_it_club.git
+```
+
+```env
+cd bmc-it-club
+```
+
+## 2. Install Dependencies
+
+```env
+npm install
+```
+
+or
+
+```env
+npm install --force
+```
+
+**3. Setup Environment Variables**
+
+Create a `.env` file with the credentials provided above.
+
+**4. Run Locally**
+
+```env
+npm run dev
+```
+
+Open → http://localhost:3000
+
+**5. Deployment on Vercel**

@@ -3,6 +3,8 @@
 import { motion } from "framer-motion"
 import { Facebook, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react"
 
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <footer className="bg-muted/50 border-t">
@@ -18,7 +20,9 @@ export default function Footer() {
               {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">BMC</span>
               </div> */}
-              <span className="font-bold text-xl">BMC IT Club</span>
+              <Link href={"/"}>
+                          <span className="font-bold text-xl">BMC IT Club</span>
+                          </Link>
             </div>
             <p className="text-muted-foreground text-sm">
               Empowering students with IT skills at Bhairahawa Multiple Campus, Nepal.

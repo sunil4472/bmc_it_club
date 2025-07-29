@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "BMC IT Club - Bhairahawa Multiple Campus",
   description: "Empowering Students with IT Skills at BMC",
-  keywords: "BMC, IT Club, Bhairahawa Multiple Campus, Nepal, Programming, Technology",
+  keywords: "BMC, IT Club, Bhairahawa Multiple Campus, Nepal, Programming, Technology, Sunil Neupane",
   
 }
 
