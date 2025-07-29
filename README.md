@@ -44,7 +44,7 @@ This platform showcases club activities, upcoming programs, blogs, and members w
 
 ### 🛠️ Admin Dashboard
 
-**Admin Access:** Secured with JWT + `ADMIN_KEY` from `.env`.
+**Admin Access:** Secured with JWT + `ADMIN_KEY` from `.env` Admin Route `http://localhost:3000/admin`.
 
 - **Login System** → Admin logs in with secret key & credentials.
 - **Dashboard Overview (Real Data)** →
