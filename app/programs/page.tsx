@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Calendar, DollarSign } from "lucide-react"
+import { Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -72,7 +72,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-20">
+      <section className="py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ export default function ProgramsPage() {
                     <Badge className="absolute top-4 left-4 bg-green-500">Upcoming</Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle className="line-clamp-2">{event.title}</CardTitle>
+                    <CardTitle className="line-clamp-2 pb-2">{event.title}</CardTitle>
                     <CardDescription className="line-clamp-3">{event.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -112,7 +112,7 @@ export default function ProgramsPage() {
                       {new Date(event.date).toLocaleDateString()}
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <DollarSign className="h-4 w-4 mr-2" />
+                      <span className="h-4 w-4 mr-2">रु </span>
                       NPR {event.fee}
                     </div>
                     <Button className="w-full" asChild>
@@ -133,7 +133,7 @@ export default function ProgramsPage() {
       </section>
 
       {/* Completed Events */}
-      <section className="py-20 bg-muted/50">
+      <section className="py-8 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -166,7 +166,7 @@ export default function ProgramsPage() {
                     <Badge className="absolute top-4 left-4 bg-gray-500">Completed</Badge>
                   </div>
                   <CardHeader>
-                    <CardTitle className="line-clamp-2">{event.title}</CardTitle>
+                    <CardTitle className="line-clamp-2 pb-2">{event.title}</CardTitle>
                     <CardDescription className="line-clamp-3">{event.description}</CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-4">
@@ -175,7 +175,7 @@ export default function ProgramsPage() {
                       {new Date(event.date).toLocaleDateString()}
                     </div>
                     <div className="flex items-center text-sm text-muted-foreground">
-                      <DollarSign className="h-4 w-4 mr-2" />
+                      <span className="h-4 w-4 mr-2">रु</span>
                       NPR {event.fee}
                     </div>
                   </CardContent>

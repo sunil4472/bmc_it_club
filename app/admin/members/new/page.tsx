@@ -16,25 +16,24 @@ import { useToast } from "@/hooks/use-toast"
 import { useRouter } from "next/navigation"
 import Link from "next/link"
 import { ImageUpload } from "@/components/image-upload"
-
 const roles = [
   "President",
   "Vice President",
   "Secretary",
+  "Joint Secretary",
+  "Treasurer",
+  "Joint Treasurer",
+  "Tech Lead",
+  "Vice Tech Lead",
+  "Executive Member",
   "Vice Secretary",
   "Program Lead",
   "Technical Lead",
-  "Marketing Head",
-  "Design Lead",
-  "Web Developer",
+  "Designer",
+  "Developer",
   "Content Writer",
-  "Database Administrator",
-  "Mobile App Developer",
-  "DevOps Engineer",
-  "Quality Assurance Lead",
-  "Cybersecurity Specialist",
-  "Member",
 ]
+
 
 export default function NewMemberPage() {
   const [memberData, setMemberData] = useState({

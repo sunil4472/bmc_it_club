@@ -118,11 +118,11 @@ export default function AdminEventsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8 flex justify-between items-center"
         >
-          <div>
+          <div className="mt-12">
             <h1 className="text-3xl font-bold mb-2">Manage Events</h1>
             <p className="text-muted-foreground">Create, edit, and manage events</p>
           </div>
-          <Button asChild>
+          <Button asChild className="mt-10">
             <Link href="/admin/events/new">
               <Plus className="mr-2 h-4 w-4" />
               New Event
@@ -152,7 +152,7 @@ export default function AdminEventsPage() {
                   </Badge>
                 </div>
                 <CardHeader>
-                  <CardTitle className="line-clamp-2">{event.title}</CardTitle>
+                  <CardTitle className="line-clamp-2 pb-2">{event.title}</CardTitle>
                   <CardDescription>
                     {new Date(event.date).toLocaleDateString()} • NPR {event.fee}
                   </CardDescription>

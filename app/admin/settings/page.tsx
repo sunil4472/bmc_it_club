@@ -30,9 +30,9 @@ export default function AdminSettingsPage() {
   const [clubData, setClubData] = useState<ClubSettings>({
     clubName: "BMC IT Club",
     clubLogo: "",
-    contactNumber: "+977-9876543210",
-    whatsappLink: "https://wa.me/9779876543210",
-    email: "info@bmcitclub.edu.np",
+    contactNumber: "+977-9811420975 ",
+    whatsappLink: "https://wa.me/9811420975 ",
+    email: "bmcitclub1@gmail.com",
     address: "Bhairahawa Multiple Campus, Nepal",
     description: "Empowering students with IT skills at Bhairahawa Multiple Campus, Nepal.",
     defaultTheme: "system",
@@ -115,7 +115,7 @@ export default function AdminSettingsPage() {
 
   return (
     <div className="min-h-screen bg-background p-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto mt-12">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Admin Settings</h1>
           <p className="text-muted-foreground">Manage club settings and preferences</p>
@@ -168,88 +168,17 @@ export default function AdminSettingsPage() {
               </div>
             </CardContent>
           </Card>
-
-          {/* Club Logo */}
-          <Card className="lg:col-span-2">
-            <CardHeader>
-              <CardTitle>Club Logo</CardTitle>
-              <CardDescription>Upload or set the club logo</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ImageUpload
-                value={clubData.clubLogo}
-                onChange={(url) => setClubData((prev) => ({ ...prev, clubLogo: url }))}
-                label="Club Logo"
-              />
-            </CardContent>
-          </Card>
         </div>
 
         {/* Club Information */}
         <Card className="mt-8">
           <CardHeader>
-            <CardTitle>Club Information</CardTitle>
-            <CardDescription>Update club details and contact information</CardDescription>
+            <CardTitle>Update Button</CardTitle>
+            <CardDescription>Update theme</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleClubInfoUpdate} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="clubName">Club Name</Label>
-                  <Input
-                    id="clubName"
-                    value={clubData.clubName}
-                    onChange={(e) => setClubData((prev) => ({ ...prev, clubName: e.target.value }))}
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="contactNumber">Contact Number</Label>
-                  <Input
-                    id="contactNumber"
-                    value={clubData.contactNumber}
-                    onChange={(e) => setClubData((prev) => ({ ...prev, contactNumber: e.target.value }))}
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    value={clubData.email}
-                    onChange={(e) => setClubData((prev) => ({ ...prev, email: e.target.value }))}
-                  />
-                </div>
-                <div>
-                  <Label htmlFor="whatsappLink">WhatsApp Link</Label>
-                  <Input
-                    id="whatsappLink"
-                    value={clubData.whatsappLink}
-                    onChange={(e) => setClubData((prev) => ({ ...prev, whatsappLink: e.target.value }))}
-                  />
-                </div>
-              </div>
-
-              <div>
-                <Label htmlFor="address">Address</Label>
-                <Input
-                  id="address"
-                  value={clubData.address}
-                  onChange={(e) => setClubData((prev) => ({ ...prev, address: e.target.value }))}
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="description">Description</Label>
-                <Textarea
-                  id="description"
-                  rows={3}
-                  value={clubData.description}
-                  onChange={(e) => setClubData((prev) => ({ ...prev, description: e.target.value }))}
-                />
-              </div>
+           
 
               <Button type="submit" disabled={loading}>
                 <Save className="mr-2 h-4 w-4" />

@@ -83,11 +83,11 @@ export default function AdminMembersPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8 flex justify-between items-center"
         >
-          <div>
+          <div className="mt-12">
             <h1 className="text-3xl font-bold mb-2">Manage Members</h1>
             <p className="text-muted-foreground">Add, edit, and manage club members</p>
           </div>
-          <Button asChild>
+          <Button asChild className="mt-10">
             <Link href="/admin/members/new">
               <Plus className="mr-2 h-4 w-4" />
               New Member

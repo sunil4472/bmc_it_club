@@ -15,10 +15,10 @@ export default function Footer() {
             className="space-y-4"
           >
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">BMC</span>
-              </div>
-              <span className="font-bold text-xl">IT Club</span>
+              </div> */}
+              <span className="font-bold text-xl">BMC IT Club</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Empowering students with IT skills at Bhairahawa Multiple Campus, Nepal.
@@ -72,11 +72,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@bmcitclub.edu.np</span>
+                <span>bmcitclub1@gmail.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+977-9876543210</span>
+                <span>+977-9811420975 </span>
               </li>
             </ul>
           </motion.div>
@@ -90,13 +90,13 @@ export default function Footer() {
           >
             <h3 className="font-semibold">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100094504922018" className="text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100094504922018" className="text-muted-foreground hover:text-primary transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100094504922018" className="text-muted-foreground hover:text-primary transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -110,7 +110,7 @@ export default function Footer() {
           transition={{ delay: 0.4 }}
           className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground"
         >
-          <p>&copy; 2025 BMC IT Club | Bhairahawa Multiple Campus. All rights reserved.</p>
+          <p>&copy; 2025 BMC IT Club | Bhairahawa Multiple Campus. All rights reserved.</p><p>Developed by <a href="https://www.suniln.com.np/" target="_blank" className="text-[#3b82f5] font-bold text-sm">Sunil Neupane</a></p>
         </motion.div>
       </div>
     </footer>

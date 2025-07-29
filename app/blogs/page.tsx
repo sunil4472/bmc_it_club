@@ -86,7 +86,7 @@ export default function BlogsPage() {
                     />
                   </div>
                   <CardHeader>
-                    <CardTitle className="line-clamp-2 group-hover:text-primary transition-colors">
+                    <CardTitle className="line-clamp-2 pb-[3px] group-hover:text-primary transition-colors">
                       {blog.title}
                     </CardTitle>
                     <CardDescription className="line-clamp-3">{blog.content.substring(0, 150)}...</CardDescription>

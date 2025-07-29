@@ -39,10 +39,11 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            {/* <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              
               <span className="text-primary-foreground font-bold text-sm">BMC</span>
-            </div>
-            <span className="font-bold text-xl">IT Club</span>
+            </div> */}
+            <span className="font-bold text-xl">BMC IT Club</span>
           </motion.div>
 
           {/* Desktop Navigation */}

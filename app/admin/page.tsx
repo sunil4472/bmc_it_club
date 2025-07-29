@@ -177,11 +177,11 @@ export default function AdminDashboard() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8 flex justify-between items-center"
         >
-          <div>
+          <div className="mt-12">
             <h1 className="text-3xl font-bold mb-2">Admin Dashboard</h1>
             <p className="text-muted-foreground">Welcome back! Here's what's happening with BMC IT Club.</p>
           </div>
-          <Button variant="outline" onClick={handleLogout}>
+          <Button variant="outline" onClick={handleLogout} className="mt-10">
             <LogOut className="mr-2 h-4 w-4" />
             Logout
           </Button>

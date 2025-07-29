@@ -50,14 +50,14 @@ export default function ContactPage() {
     const message = encodeURIComponent(
       `Hello BMC IT Club,\n\nName: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`,
     )
-    const whatsappUrl = `https://wa.me/9779876543210?text=${message}`
+    const whatsappUrl = `https://wa.me/9811420975?text=${message}`
     window.open(whatsappUrl, "_blank")
   }
 
   const handleEmail = () => {
     const subject = encodeURIComponent("Contact Form Submission")
     const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`)
-    const emailUrl = `mailto:info@bmcitclub.edu.np?subject=${subject}&body=${body}`
+    const emailUrl = `mailto:bmcitclub1@gmail.com?subject=${subject}&body=${body}`
     window.location.href = emailUrl
   }
 
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+977-9876543210</p>
+                    <p className="text-muted-foreground">+977-9811420975 </p>
                   </div>
                 </div>
 
@@ -132,7 +132,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@bmcitclub.edu.np</p>
+                    <p className="text-muted-foreground">bmcitclub1@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function ContactPage() {
                 <Button
                   onClick={() => {
                     const message = encodeURIComponent("Hello BMC IT Club, I'd like to know more about...")
-                    const whatsappUrl = `https://wa.me/9779876543210?text=${message}`
+                    const whatsappUrl = `https://wa.me/9811420975?text=${message}`
                     window.open(whatsappUrl, "_blank")
                   }}
                   className="w-full sm:w-auto"

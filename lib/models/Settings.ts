@@ -12,15 +12,15 @@ const SettingsSchema = new mongoose.Schema(
     },
     contactNumber: {
       type: String,
-      default: "+977-9876543210",
+      default: "+977-9811420975 ",
     },
     whatsappLink: {
       type: String,
-      default: "https://wa.me/9779876543210",
+      default: "https://wa.me/9811420975 ",
     },
     email: {
       type: String,
-      default: "info@bmcitclub.edu.np",
+      default: "bmcitclub1@gmail.com",
     },
     address: {
       type: String,

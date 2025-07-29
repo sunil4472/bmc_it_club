@@ -81,13 +81,13 @@ export default function AdminBlogsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-8 flex justify-between items-center"
         >
-          <div>
+          <div className="mt-10">
             <h1 className="text-3xl font-bold mb-2">Manage Blogs</h1>
             <p className="text-muted-foreground">Create, edit, and manage blog posts</p>
           </div>
-          <Button asChild>
+          <Button asChild className="mt-12">
             <Link href="/admin/blogs/new">
-              <Plus className="mr-2 h-4 w-4" />
+              <Plus className="mr-2  h-4 w-4" />
               New Blog
             </Link>
           </Button>
@@ -103,13 +103,13 @@ export default function AdminBlogsPage() {
             >
               <Card className="h-full">
                 <div className="aspect-video relative overflow-hidden rounded-t-lg">
-                  <img src={blog.image || "/placeholder.svg"} alt={blog.title} className="w-full h-full object-cover" />
+                  <img src={blog.image || "/placeholder.svg"} alt={blog.title} className="w-full h-full mb-6 object-cover" />
                   <Badge className={`absolute top-4 left-4 ${blog.published ? "bg-green-500" : "bg-gray-500"}`}>
                     {blog.published ? "Published" : "Draft"}
                   </Badge>
                 </div>
                 <CardHeader>
-                  <CardTitle className="line-clamp-2">{blog.title}</CardTitle>
+                  <CardTitle className="line-clamp-2 pb-2">{blog.title}</CardTitle>
                   <CardDescription>
                     By {blog.author} • {new Date(blog.createdAt).toLocaleDateString()}
                   </CardDescription>

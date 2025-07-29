@@ -435,14 +435,14 @@ export default function EventDetailPage() {
                   <p className="text-sm text-muted-foreground">Have questions about this event? Contact us:</p>
                   <div className="space-y-2">
                     <Button variant="outline" className="w-full bg-transparent" asChild>
-                      <a href="mailto:info@bmcitclub.edu.np">
+                      <a href="mailto:bmcitclub1@gmail.com">
                         <Mail className="mr-2 h-4 w-4" />
                         Email Us
                       </a>
                     </Button>
                     <Button variant="outline" className="w-full bg-transparent" asChild>
                       <a
-                        href="https://wa.me/9779876543210?text=Hello%20BMC%20IT%20Club,%20I%20have%20a%20question%20about%20the%20event"
+                        href="https://wa.me/9811420975?text=Hello%20BMC%20IT%20Club,%20I%20have%20a%20question%20about%20the%20event"
                         target="_blank"
                         rel="noreferrer"
                       >

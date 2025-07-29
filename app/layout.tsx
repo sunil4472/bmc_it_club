@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "BMC IT Club - Bhairahawa Multiple Campus",
   description: "Empowering Students with IT Skills at BMC",
   keywords: "BMC, IT Club, Bhairahawa Multiple Campus, Nepal, Programming, Technology",
-    generator: 'v0.dev'
+  
 }
 
 export default function RootLayout({
