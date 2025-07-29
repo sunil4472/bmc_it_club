@@ -3,7 +3,7 @@
 **Live Link:** [bmcit.suniln.com.np](https://bmcit.suniln.com.np)  
 **Repository:** [GitHub Repo Link](https://github.com/sunil4472/bmc_it_club.git)
 
-A modern, elegant, and animated **MERN Stack website** for **Bhairahawa Multiple Campus IT Club**.  
+A modern, elegant, and animated **website** for **Bhairahawa Multiple Campus IT Club**.  
 This platform showcases club activities, upcoming programs, blogs, and members while providing an **Admin Dashboard** for full management.
 
 ---
