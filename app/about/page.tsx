@@ -136,7 +136,7 @@ export default function AboutPage() {
   }
 
   return (
-    <div className="pt-12">
+    <div className="pt-8 overflow-x-hidden">
       {/* Hero Section */}
       <section className="py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-purple-500/10 to-cyan-500/10" />

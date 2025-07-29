@@ -119,7 +119,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="pt-12 overflow-hidden">
+    <div className="pt-8 overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
         {/* Animated Background */}
