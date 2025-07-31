@@ -4,7 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Calendar, DollarSign, Users, MapPin, Clock, ArrowLeft, Mail, MessageCircle } from "lucide-react"
+import { Calendar, Users, MapPin, Clock, ArrowLeft, Mail, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -217,8 +217,8 @@ export default function EventDetailPage() {
                   </span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
-                  <DollarSign className="h-5 w-5 mr-3" />
-                  <span>NPR {event.fee}</span>
+                  <span className="h-5 w-5 mr-3">रु </span>
+                  <span>{event.fee}</span>
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <Users className="h-5 w-5 mr-3" />
